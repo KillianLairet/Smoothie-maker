@@ -1,0 +1,222 @@
+/* IMPORTATION DES POLICES */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+/* GLOBAL */
+
+body{
+    font-family: Arial;
+    font-size: 16px;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.text_white{
+    color: white;
+}
+.content-setup{
+    width: 1060px;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+header{
+    position: relative;
+    height: 600px;
+    background: url(../img/detox\ cure\ smoothie.jpg) no-repeat center;
+    background-size: 100%;
+}
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+nav figure{
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+nav figure img{
+    height: 50%;
+}
+nav ul{
+    display: flex;
+    margin: 0px;
+}
+nav ul li{
+    height: 100%;
+    padding: 0px 20px;
+}
+nav ul li a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+nav ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+header h1{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', Arial;
+    font-size: 60px;
+    white-space: nowrap;
+    font-weight: lighter;
+    margin: 0px;
+}
+
+
+/* MAIN */
+
+/* Devise */
+.devise{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.devise img{
+    width: 33%;
+}
+.devise>div{
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Fabrication */
+.fabrication{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#feb4c3, #f59e28);
+    padding: 50px;
+}
+.fabrication div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px;
+}
+.fabrication div img{
+    height: 60px;
+}
+.fabrication div p{
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Concept */
+.concept ul{
+    margin: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.concept ul li{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.concept ul li p{
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+footer{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f59e28;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Tablette */
+@media (min-width: 768px) and (max-width: 1060px) {
+    /* GLOBAL */
+    .content-setup{
+        width: 767px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    /* GLOBAL */
+
+    body{
+        font-size: 16px;
+    }
+    .content-setup{
+        width: 300px;
+    }
+
+
+    /* HEADER */
+
+    header{
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    nav{
+        height: 80px;
+    }
+    nav ul li{
+        padding: 0px 5px;
+    }
+    header h1{
+        width: 240px;
+        font-size: 40px;
+        white-space: normal;
+        font-weight: bold;
+        text-align: center;
+    }
+
+
+    /* MAIN */
+
+    /* Devise */
+    .devise{
+        flex-direction: column;
+        align-items: center;
+    }
+    .devise img{
+        width: 60%;
+    }
+    .devise div{
+        width: 300px;
+    }
+    .devise div p{
+        text-align: center;
+    }
+
+    /* Fabrication */
+    .fabrication{
+        padding: 20px;
+    }
+
+    /* Concept */
+    .concept ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .concept ul li{
+        width: 100%;
+    }
+    .concept ul li h3{
+        margin: 14px 0px;
+    }
+    .concept ul li p{
+        margin: 14px 0px;
+    }
+}
